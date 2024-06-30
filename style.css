@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    /* height: 100%;
+    width: 100%; */
+    font-size: 16px;
+    background-color: hsl(47, 88%, 63%);
+    font-family: "Figtree", sans-serif;
+    color: white;
+
+}
+
+.container {
+    width: 25%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 11px 15px 0px 3px black;
+}
+
+header {
+
+    padding: 20px 5px 20px 5px;
+
+}
+
+header>img {
+    width: 99%;
+    border-radius: 5%;
+    opacity: 1;
+}
+
+header>img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+nav>span {
+    font-weight: 800;
+    background-color: hsl(47, 88%, 63%);
+    padding: 7px;
+    border-radius: 7px;
+}
+
+nav>p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+article>h1 {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+    padding: 2px 0px 15px 1px;
+    font-weight: 800;
+}
+
+article>p {
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+    font-weight: 500;
+}
+
+.image {
+    width: 60%;
+}
+
+.name {
+    font-weight: 800;
+    color: black;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        flex-direction: column;
+    }
+
+    article,
+    nav,
+    header,
+    footer {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media all and(min-width:375px) {
+    .container {
+        flex-direction: column;
+    }
+
+    article {
+        flex: 2 0px;
+    }
+
+    header {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
+    article {
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+    }
+
+}
